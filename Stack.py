@@ -4,18 +4,18 @@ class Stack:
 
     def push(self, value):
         # Do something
-        link_to_add = Link(value)
-        link_to_add.next = self.head
-        self.head = link_to_add
+        link_to_add = Link(value)           # add link
+        link_to_add.next = self.head        # Add link to the next head
+        self.head = link_to_add             # Change the head point
 
     def pop(self):
         # Return something
-        link_to_pass = self.head
-        if link_to_pass is None:
+        link_to_pass = self.head            # ???
+        if link_to_pass is None:            # Check if the head is none, return nothing
             return None
-        self.head = link_to_pass.next
+        self.head = link_to_pass.next       # Change the head point
 
-        return link_to_pass.value
+        return link_to_pass.value           # Return the value of the popped value
 
 
 class Link:
