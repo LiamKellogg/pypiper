@@ -67,10 +67,9 @@ if __name__ == '__main__':
     tree = Tree()
     tree.insert(4, "is a cosmic number")
     tree.insert(42, "is the life, universe, and everything")
-    print(tree.insert(21, "What is nine plus ten"))
+    tree.insert(21, "What is nine plus ten")
     tree.insert(3, "illuminati will find you")
-    print(tree.insert(21, "What is 38 minus 17"))
+    tree.insert(21, "What is 38 minus 17")
 
     tree.traverse(print)
-
-    print(tree.find(21))
+    print(tree)
