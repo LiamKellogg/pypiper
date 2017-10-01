@@ -25,7 +25,7 @@ class PriorityStack:
 
     def pop(self):
         if self.head is None:
-            return None
+            return None, None
 
         link_pop = self.head
         self.head = link_pop.next
